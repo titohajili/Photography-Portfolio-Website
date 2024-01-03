@@ -1,5 +1,5 @@
 :root{
-    
+
     /* green theme */
     --color-primary: #ff7b02;
     --color-primary-variant: #e5a55d;
@@ -24,7 +24,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -69,3 +69,55 @@ img{
 }
 
 /* ============ NAV =============*/
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/* nav class on scroll using javascript */
+.window-scrolled{
+    background: var(--color-bg-2);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* only need on tablets and phones */
+.nav-toggle-btn{
+    display: none;
+}
+.nav-logo{
+    width: 7.5rem;
+}
+.nav-links{
+    display: flex;
+    gap: 4rem;
+}
+.nav-socials{
+    display: flex;
+    gap: 1rem;
+}
+.nav-socials a{
+    height: 2rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    background: linear-gradient(var(--color-primary-variant), var(--color-primary));
+    border-radius: 0.5rem;
+    color: var(--color-bg-2);
+    display: grid;
+    place-items: center;
+}
+
+.nav-socials a:hover{
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
+}
