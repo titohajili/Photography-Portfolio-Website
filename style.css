@@ -177,6 +177,7 @@ header{
     gap: 2rem;
     align-items: flex-start;
 }
+/* general  empty styles */
 
 .empty{
     height: 3.5rem;
@@ -200,7 +201,7 @@ header{
 .header-frames{
     position: absolute;
     top: 88vh;
-    right: 60rem;
+    right: 70rem;
     transition: var(--transition);
 }
 
@@ -225,4 +226,45 @@ header{
 .header-frames:hover .header-frame:nth-child(2){
     top: 0;
     left: 15rem;
+} 
+
+/* general style for contact buttons */
+.contact-btn{
+    color: var(--color-bg-1);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.header-btn{
+    background: linear-gradient(-30deg, var(--color-primary-variant), var(--color-primary), var(--color-primary-variant));
+    position: absolute;
+    right: 6%;
+    bottom: -3rem;
+}
+.header-btn:hover{
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    color: var(--color-bg-1);
+}
+.contact-btn i {
+    font-size: 3.5rem;
+    position: absolute;
+}
+.contact-btn p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.contact-btn p span{
+    position: absolute;
+    transform-origin: 0.3rem 5rem;
 }

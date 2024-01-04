@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+.tito{
+    border: 4px solid black;
+    width: 50%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+}
+.tito div{
+    border: 3px solid red;
+    width: 50%;
+    height: 50%;
+}
