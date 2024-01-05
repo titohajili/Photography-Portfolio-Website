@@ -124,7 +124,7 @@ nav{
 /* =====HEAADER====== */
 
 header{
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
@@ -261,10 +261,86 @@ header{
     height: 10rem;
     display: flex;
     justify-content: center;
-    color: white;
+    animation: spinText 25s linear infinite;
 
 }
 .contact-btn p span{
     position: absolute;
     transform-origin: 0.3rem 5rem;
+}
+@keyframes spinText {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------------about-page-------------- */
+
+#about{
+    margin-top: 18rem;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 10rem 26rem auto;
+    gap: 3rem;
+    position: relative;
+}
+.about-title{
+    position: absolute;
+    top: -7rem;
+    z-index: 1;
+}
+.about-btn{
+    color: var(--color-primary-variant);
+    align-self: end;
+}
+
+.about-btn:hover{
+    transform: translateY(-1rem);
+}
+.about-image{
+    position: relative;
+}
+.about-image-bg{
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    bottom: 0;
+    background: var(--color-bg-4);
+}
+.about-image-lg{
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: 500ms ease;
+}
+.about-image-sm{
+    position: absolute;
+    top: 3rem;
+    left: 8rem;
+    height: 22rem;
+    overflow: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+    transition: 500ms ease;
+}
+.about-image:hover .about-image-sm{
+    opacity: 0;
+}
+.about-image:hover .about-image-bg{
+    bottom: 0;
+}
+.about-image:hover .about-image-lg{
+   filter: saturate(1) brightness(1);
+   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+   border: 1rem solid var(--color-bg-4);
+   left: 0;
+   bottom: 0;
+}
+.about-right{
+    margin-left: 5rem;
+}
+
+.about-right p{
+    margin: 0 4rem 1.5rem 0;
 }

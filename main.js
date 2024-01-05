@@ -4,10 +4,9 @@ window.addEventListener('scroll', () => {
 })
 //CONTACT BUTTONS(circular tex buttons)
 const textButtons = document.querySelectorAll('.contact-btn');
-
 textButtons.forEach(textButton => {
     let text = textButton.querySelector('p');
 
-    text.innerHTML = text.innerHTML.split('').map((character, index) => '<span style="transform: rotate( $ { index * 12}deg)"${character}> </span>').join('')
-    console.log(text.innerHTML);
-}) //error
+    text.innerHTML = text.innerHTML.split('').map((character, index) => `<span style="transform: rotate(${index * 13}deg)">${character}</span>`).join('');
+});
+
