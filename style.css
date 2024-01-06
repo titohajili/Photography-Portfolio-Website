@@ -344,3 +344,37 @@ header{
 .about-right p{
     margin: 0 4rem 1.5rem 0;
 }
+/* ====GALERY */
+#gallery{
+    margin-top: 12rem;
+}
+.gallery-head{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-container p{
+    width: 45rem;
+}
+.swiper-wrapper{
+    margin-top: 5rem;
+    height: 37rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide{
+    border: 0.5rem solid var(--color-bg-2);
+    height: fit-content;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.swiper-slide:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+}
+.swiper-slide img{
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.swiper-slide:hover img{
+    filter: saturate(1);
+}
