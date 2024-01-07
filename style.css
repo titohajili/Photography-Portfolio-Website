@@ -378,3 +378,44 @@ header{
 .swiper-slide:hover img{
     filter: saturate(1);
 }
+/* =====EXIBITIONS========== */
+#exhibitions{
+    margin-top: 10rem;
+}
+
+.exhibitions-container{
+    position: relative;
+}
+.exhibitions-empty{
+    width: 26rem;
+    position: absolute;
+    right: 14ren;
+    top: 0;
+}
+.exhibitions-head{
+    display: grid;
+    grid-template-columns: auto 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.exhibitions-head > p{
+    width: 45rem;
+}
+.exhibitions-btn{
+    color: var(--color-primary-variant);
+}
+.exhibitions-btn:hover{
+    transform: translateY(-1rem)
+}
+.exhibitions-galary{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 5rem;
+    gap: 3rem;
+}
+.exhibitions-galary article{
+    border: 0.5rem solid var(--color-bg-4);
+    transition: var(--transition);
+}
+
+

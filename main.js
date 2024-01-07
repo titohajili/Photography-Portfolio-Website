@@ -8,7 +8,11 @@ textButtons.forEach(textButton => {
     let text = textButton.querySelector('p');
 
     text.innerHTML = text.innerHTML.split('').map((character, index) => `<span style="transform: rotate(${index * 13}deg)">${character}</span>`).join('');
+
+    
 });
+
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
