@@ -418,4 +418,60 @@ header{
     transition: var(--transition);
 }
 
+.exhibitions-galary article:nth-child(1){
+    grid-row: 1/3;
+}
 
+.exhibitions-galary article:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.exhibitions-galary article img{
+    height: 100%;
+    filter: saturate(0) ;
+    transition: var(--transition);
+}
+.exhibitions-galary article img:hover{
+    filter: saturate(1);
+}
+.exhibitions-galary article:hover{
+    box-shadow:  0 4rem 4rem rgba(0, 0, 0, 0.5);
+}
+/* ====FOOTER===== */
+
+footer{
+    margin-top: 7rem;
+}
+.footer-container{
+    border-top:  0.5rem solid var(--color-bg-4);
+    padding-top: 5rem;
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-btn{
+    width: 5rem;
+    height: 5rem;
+    border: 0.2rem solid var(--color-primary-variant);
+    border-radius: 50%;
+    font-size: 3rem;
+    color: var(--color-primary-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+.footer-btn:hover{
+    transform: translateY(-1rem);
+    border-color: var(--color-primary);
+}
+
+.footer-links{
+    margin: 3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
