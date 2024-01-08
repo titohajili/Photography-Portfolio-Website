@@ -201,7 +201,7 @@ header{
 .header-frames{
     position: absolute;
     top: 88vh;
-    right: 70rem;
+    right: 50rem;
     transition: var(--transition);
 }
 
@@ -526,4 +526,113 @@ footer{
     #nav-toggle-close{
         display: none;
     }
+
+
+    header{
+        height: fit-content;
+        padding: 14rem 0 12rem;
+        display: grid;
+        place-items: center;
+    }
+    .header-image-bg, .header-image-sm{
+        display: none;
+    }
+    .header-container{
+        grid-template-columns: 45% 54%;
+        gap: 6%;
+        margin: 0;
+    }
+    .header-image-lg{
+        filter: saturate(1) brightness(1);
+        border: 1rem solid var(--color-bg-2);
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .empty{
+        display: none;
+    }
+    .header-right p{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .header-right h1{
+        display: none;
+    }
+    .header-frame, .contact-btn{
+        display: none;
+    }
+
+    .header-tag{
+        margin-bottom: 1rem;
+    }
+
+    .header-btn-md{
+        background: linear-gradient(135deg, var(--color-primary-variant), var(--color-primary));
+        color: var(--color-bg-1);
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.6rem 1.6rem;
+        font-weight: 600;
+        border-radius: 0.3rem;
+    }
+    .header-btn-md:hover{
+        color: var(--color-bg-1);
+    }
+
+    .about-container{
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+    }
+    .about-image-bg, .about-image-sm{
+        display: none;
+    }
+    .about-image-lg{
+        left: 0;
+        top: 0;
+        filter: saturate(1) brightness(1);
+
+    }
+    .about-image:hover .about-image-lg{
+        border: none;
+    }
+    .about-right{
+        margin: 0;
+    }
+   
+    
+    .about-right p{
+        margin-bottom: 1rem;
+    }
+    #gallery{
+        margin-top: 8rem;
+    }
+    .gallery-container{
+        width: 100%;
+        margin-top: 2rem;
+
+    }
+    .gallery-title{
+        margin-left: 4rem;
+    }
+    .gallery-container p{
+        margin-left: 4rem;
+    }
+    .swiper-wrapper{
+        margin-top: 4rem;
+        height: fit-content;
+    }
+
+    .exhibitions-head > p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .exhibitions-galar{
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    .exhibitions-galary article{
+        border: none;
+    }
+    
 }
